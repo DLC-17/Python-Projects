@@ -9,15 +9,3 @@ def PI_Calculator(user_input):
         iterator+=1
     Answer=round(math.sqrt(calculation),user_input)
     print(Answer)
-
-import datetime
-def day_calc():
-    date_entry = input('Enter a date in YYYY-MM-DD format: ')
-    year, month, day = map(int, date_entry.split('-'))
-    date1 = datetime.date(year, month, day)
-
-    day_number = (date1 - datetime.date(date1.year, 1, 1)).days + 1
-
-    print("Day", day_number, "of the year")
-
-day_calc()
