@@ -4,6 +4,7 @@ import random
 from datetime import date
 from datetime import datetime
 stopper=1
+
 def timer(Sec,Min,Hour):
     while stopper!=0:
         Timer=Sec + ( Min * 60 ) + ( Hour * 120 )
@@ -41,6 +42,4 @@ def stopwatch():
         print("Today's date", today, "\r",end="")
         print( sec,"Seconds", min,"Minutes",hour,"Hours",day,"Days","\r",end="")
 
-"""x ="Armani"
-print(x,"The Best")"""
 stopwatch()
